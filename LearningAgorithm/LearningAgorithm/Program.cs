@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace LearningAgorithm
 {
@@ -6,7 +8,11 @@ namespace LearningAgorithm
     {
         static void Main(string[] args)
         {
+            var me = new MergeSort();
+            me.Merge();
             Console.WriteLine("Hello World!");
+            var a = new List<string>();
+            a.FirstOrDefault();
         }
     }
 }
