@@ -18,7 +18,17 @@ namespace LearningAgorithm.Agorithm
                 }
             }
             (arr[i + 1], arr[end]) = (arr[end], arr[i + 1]);
+            Console.WriteLine("Partition: ");
+            printArray(arr);
             return i + 1;
+        }
+
+        private static void printArray(int[] arr)
+        {
+            int n = arr.Length;
+            for (int i = 0; i < n; ++i)
+                Console.Write(arr[i] + " ");
+            Console.WriteLine();
         }
 
         public void quicksort(int[] arr, int start, int end)
